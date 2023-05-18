@@ -13,6 +13,7 @@ public class UsingBufferedReader {
 
         StopWatch.start();
 
+        DumpDataWriter.writeDumpData(args[0],DumpDataWriter.size1MB);
         BufferedReader inputStream= new BufferedReader(new FileReader(args[0]));
         while (inputStream.read()!=-1){}
 
@@ -26,6 +27,7 @@ public class UsingBufferedReader {
 
         StopWatch.start();
 
+        DumpDataWriter.writeDumpData(args[1],DumpDataWriter.size10MB);
         BufferedReader inputStream2= new BufferedReader(new FileReader(args[1]));
         while (inputStream2.read()!=-1){}
 
